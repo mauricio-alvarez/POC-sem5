@@ -1,8 +1,9 @@
-from sqlite3 import connect
+from fastapi import Depends
 from sqlmodel import SQLModel, Session, create_engine
-from app.core.config import settings
+from typing import Annotated
+from contextvars import ContextVar
 
-# settings = get_settings()
+from app.core.config import settings
 
 connect_args = {}
 
