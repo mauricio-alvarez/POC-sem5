@@ -36,7 +36,7 @@ Follow these steps to set up and run the project locally:
 5. **Run the Backend**  
     Use FastAPI to start the backend server locally:
     ```bash
-    uvicorn main:app --reload
+    uvicorn app.main:app --reload
     ```
 
 ### Accessing the Application
