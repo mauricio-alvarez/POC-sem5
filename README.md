@@ -30,7 +30,10 @@ Follow these steps to set up and run the project locally:
     pip install -r requirements.txt
     ```
 
-4. **Run the Backend**  
+4. **Configure Environment Variables**  
+    Locate the `.env.template` file in the project directory. Rename it to `.env` and fill in the required values as specified in the template. This file contains sensitive configuration details such as API keys or database credentials.
+
+5. **Run the Backend**  
     Use FastAPI to start the backend server locally:
     ```bash
     uvicorn main:app --reload
